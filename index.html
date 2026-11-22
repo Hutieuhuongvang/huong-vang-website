@@ -1,42 +1,88 @@
-// Menu di động
-const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
-burger.addEventListener('click', () => menu.classList.toggle('open'));
-menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIFON Hu Tieu Huong Vang — International Marketing Plan for Australia</title>
+<meta name="description" content="Introducing VIFON Hu Tieu Huong Vang and its international marketing plan for the Australian market — Group 1, International Marketing, Thuongmai University.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍜</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-// Hiệu ứng hiện dần khi cuộn
-document.querySelectorAll('.card, .panel, .sw, .goal, .price, .step, .kpi, .stat, .flow div')
-  .forEach(el => el.classList.add('rv'));
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><span class="brand-ico">🍜</span> Huong Vang · Australia 2026</a>
+    <button class="burger" id="burger" aria-label="Open menu">☰</button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#product">Product</a>
+      <a href="#market">Australian Market</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#marketing-mix">Marketing Mix</a>
+      <a href="#implementation">Implementation</a>
+      <a href="#kpi">KPIs &amp; Risks</a>
+      <a href="#team" class="cta">Group 1</a>
+    </nav>
+  </div>
+</header>
 
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    e.target.classList.add('in');
-    io.unobserve(e.target);
-  });
-}, { threshold: 0.15 });
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow">Group 1 · International Marketing · Thuongmai University</p>
+      <h1>Hu Tieu<br><span>Huong Vang</span></h1>
+      <p class="lead">A plan to bring VIFON’s instant Nam Vang-style hu tieu to the Australian market, built around the message <b>“Vietnamese Flavour. Ready in Minutes.”</b></p>
+      <div class="chips">
+        <span>📍 Priority city: Melbourne</span>
+        <span>🍜 70–90 g single-serve bowl</span>
+        <span>💲 Retail price AUD 2.99</span>
+      </div>
+      <div class="btns">
+        <a class="btn red" href="#product">Explore the product</a>
+        <a class="btn ghost" href="#marketing-mix">Marketing mix</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/product.jpg" alt="VIFON Hu Tieu Huong Vang packaging in bowl and cup formats">
+    </div>
+  </div>
 
-document.querySelectorAll('.rv, [data-bars]').forEach(el => io.observe(el));
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b data-count="1990" data-plain="1">0</b><span>VIFON began exporting</span></div>
+      <div class="stat"><b data-count="100" data-suffix="+">0</b><span>countries &amp; territories with VIFON products</span></div>
+      <div class="stat"><b data-count="334785">0</b><span>Australians of Vietnamese ancestry (2021 Census)</span></div>
+      <div class="stat"><b data-count="12" data-suffix=" months">0</b><span>proposed planning period</span></div>
+    </div>
+  </div>
+</section>
 
-// Đếm số ở khu vực thống kê
-function fmt(n, plain) {
-  return plain ? String(n) : n.toLocaleString('en-US');
-}
-const counter = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    const el = e.target;
-    const end = Number(el.dataset.count);
-    const suffix = el.dataset.suffix || '';
-    const plain = el.dataset.plain === '1';
-    const t0 = performance.now(), dur = 1400;
-    (function tick(t) {
-      const p = Math.min((t - t0) / dur, 1);
-      const v = Math.round(end * (1 - Math.pow(1 - p, 3)));
-      el.textContent = fmt(v, plain) + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-    })(t0);
-    counter.unobserve(el);
-  });
-}, { threshold: 0.6 });
-document.querySelectorAll('[data-count]').forEach(el => counter.observe(el));
+<section id="about" class="sec">
+  <div class="wrap">
+    <p class="kicker">Who we are</p>
+    <h2>Why Hu Tieu Huong Vang &amp; why Australia?</h2>
+    <div class="two">
+      <div>
+        <p>Vietnam has strong agricultural advantages, especially an abundant rice supply — a foundation for rice-based processed foods. Vietnamese dishes such as pho, bun and hu tieu are increasingly recognised worldwide and have the potential to reach international consumers as convenient food products.</p>
+        <p><b>VIFON</b> is a long-established brand associated with instant foods featuring traditional Vietnamese flavours, and has exported since 1990. <b>Australia</b> was chosen for its multicultural population, sizeable Asian-origin communities and diverse demand for international foods — although the market also has strict requirements on food safety, labelling and import conditions.</p>
+      </div>
+      <div class="panel">
+        <h3>Our assignment topic</h3>
+        <p>“Developing an international marketing plan and export price management program for VIFON Hu Tieu Huong Vang in the Australian market.”</p>
+        <ul class="tick">
+          <li>Part 1 — Context analysis, problem identification and strategy</li>
+          <li>Part 2 — Implementation program for the marketing plan</li>
+          <li>Part 3 — Monitoring, evaluation and contingency planning</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="product" class="sec alt">
+  <div class="wrap">
+    <p
