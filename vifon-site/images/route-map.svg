@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" font-family="Arial,sans-serif">
+<rect width="960" height="460" fill="#e6f1f7"/>
+<!-- stylised landmasses -->
+<path d="M560 40l90 10 60 40-20 60-90 20-60-50z" fill="#cfe3c6" opacity=".0"/>
+<path d="M120 40c60-20 120 0 150 50s-10 120-50 150-40 60-10 90-40 40-80 10-60-130-40-200z" fill="#d6e8c9"/>
+<path d="M150 70c20-10 60-10 60 20" fill="none" stroke="#fff" stroke-width="2"/>
+<path d="M600 260c60-40 160-50 240-20s110 90 60 130-170 40-250 20-100-90-50-130z" fill="#f1dfb5"/>
+<path d="M300 300c40-10 70 10 60 30s-50 20-60 0z" fill="#d6e8c9"/>
+<!-- route -->
+<path d="M200 190C300 260 380 290 470 320S650 330 740 330" fill="none" stroke="#b0000f" stroke-width="5" stroke-dasharray="4 14" stroke-linecap="round"/>
+<path d="M200 190C260 140 330 180 420 250" fill="none" stroke="none"/>
+<!-- ship -->
+<g transform="translate(420 290)"><path d="M0 24h80l-16 26H16z" fill="#2a1e18"/><rect x="8" y="2" width="20" height="22" fill="#b0000f"/><rect x="30" y="8" width="20" height="16" fill="#f2b631"/><rect x="52" y="2" width="20" height="22" fill="#1f5a2e"/></g>
+<!-- points -->
+<g>
+<circle cx="200" cy="190" r="14" fill="#b0000f" stroke="#fff" stroke-width="4"/>
+<circle cx="470" cy="320" r="10" fill="#f2b631" stroke="#fff" stroke-width="4"/>
+<circle cx="740" cy="330" r="14" fill="#1f5a2e" stroke="#fff" stroke-width="4"/>
+<circle cx="800" cy="290" r="9" fill="#1f5a2e" stroke="#fff" stroke-width="4" opacity=".7"/>
+</g>
+<g font-weight="700" font-size="18" fill="#2a1e18">
+<text x="228" y="180">Hải Phòng / Cát Lái</text><text x="228" y="202" font-weight="400" font-size="14">Vietnam · Việt Nam</text>
+<text x="425" y="368" text-anchor="start">Singapore (transhipment)</text><text x="425" y="388" font-weight="400" font-size="14">Cảng trung chuyển (tham khảo)</text>
+<text x="640" y="380">Melbourne</text><text x="640" y="400" font-weight="400" font-size="14">Pilot city · Thành phố thí điểm</text>
+<text x="780" y="262">Sydney</text>
+</g>
+<text x="480" y="44" text-anchor="middle" font-size="26" font-weight="700" fill="#b0000f">Vietnam → Australia sea corridor · Hành lang đường biển</text>
+<text x="480" y="440" text-anchor="middle" font-size="13" fill="#6b5a50" font-style="italic">Schematic illustration, not to scale · Sơ đồ minh họa, không theo tỉ lệ</text>
+</svg>

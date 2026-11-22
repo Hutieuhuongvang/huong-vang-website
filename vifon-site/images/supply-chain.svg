@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" font-family="Arial,sans-serif">
+<rect width="960" height="360" fill="#fff6e0"/>
+<path d="M0 300h960v60H0z" fill="#e4efdf"/>
+<g text-anchor="middle" font-size="17" fill="#2a1e18" font-weight="700">
+<!-- farm -->
+<g transform="translate(80 120)"><circle cx="0" cy="40" r="62" fill="#fff" stroke="#1f5a2e" stroke-width="4"/>
+<g stroke="#1f5a2e" stroke-width="4" fill="none" stroke-linecap="round"><path d="M-20 80V10M0 80V0M20 80V10"/></g>
+<g fill="#f2b631"><ellipse cx="-20" cy="10" rx="6" ry="12"/><ellipse cx="0" cy="0" rx="6" ry="12"/><ellipse cx="20" cy="10" rx="6" ry="12"/></g>
+<text y="125">Rice farms</text><text y="146" font-weight="400" font-size="14">Vùng trồng lúa</text></g>
+<!-- mill -->
+<g transform="translate(260 120)"><circle cx="0" cy="40" r="62" fill="#fff" stroke="#1f5a2e" stroke-width="4"/>
+<rect x="-30" y="15" width="60" height="50" fill="#b0000f"/><path d="M-38 15L0-12l38 27z" fill="#8a000c"/><rect x="-8" y="38" width="16" height="27" fill="#fff6e0"/>
+<text y="125">Rice mill</text><text y="146" font-weight="400" font-size="14">Xay xát &amp; bột gạo</text></g>
+<!-- factory -->
+<g transform="translate(440 120)"><circle cx="0" cy="40" r="62" fill="#fff" stroke="#1f5a2e" stroke-width="4"/>
+<path d="M-34 70V30l22 12V30l22 12V30l22 12V10h24v60z" fill="#b0000f"/><g fill="#fff6e0"><rect x="-26" y="52" width="10" height="10"/><rect x="-6" y="52" width="10" height="10"/><rect x="14" y="52" width="10" height="10"/></g>
+<text y="125">VIFON factory</text><text y="146" font-weight="400" font-size="14">Sản xuất &amp; QC</text></g>
+<!-- warehouse -->
+<g transform="translate(620 120)"><circle cx="0" cy="40" r="62" fill="#fff" stroke="#1f5a2e" stroke-width="4"/>
+<path d="M-36 70V32L0 12l36 20v38z" fill="#f2b631" stroke="#8a000c" stroke-width="3"/><rect x="-16" y="42" width="32" height="28" fill="#8a000c"/>
+<text y="125">Export packing</text><text y="146" font-weight="400" font-size="14">Đóng kiện xuất khẩu</text></g>
+<!-- port -->
+<g transform="translate(800 120)"><circle cx="0" cy="40" r="62" fill="#fff" stroke="#1f5a2e" stroke-width="4"/>
+<path d="M-40 55h80l-14 20h-52z" fill="#1f5a2e"/><g><rect x="-26" y="30" width="20" height="25" fill="#b0000f"/><rect x="-4" y="30" width="20" height="25" fill="#f2b631"/><rect x="-15" y="8" width="20" height="22" fill="#2a8b4a"/></g>
+<text y="125">Port &amp; shipping</text><text y="146" font-weight="400" font-size="14">Cảng &amp; vận tải biển</text></g>
+</g>
+<g stroke="#b0000f" stroke-width="4" fill="#b0000f"><path d="M146 160h38"/><path d="M326 160h38"/><path d="M506 160h38"/><path d="M686 160h38"/>
+<path d="M184 160l-10-8v16z"/><path d="M364 160l-10-8v16z"/><path d="M544 160l-10-8v16z"/><path d="M724 160l-10-8v16z"/></g>
+<text x="480" y="46" text-anchor="middle" font-size="26" font-weight="700" fill="#b0000f">From paddy to Australian shelf · Từ ruộng lúa đến kệ hàng Úc</text>
+</svg>

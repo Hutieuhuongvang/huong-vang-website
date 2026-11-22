@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6e0"/><stop offset="1" stop-color="#f5e1b8"/></linearGradient></defs>
+<rect width="640" height="520" fill="url(#bg)"/>
+<circle cx="520" cy="90" r="120" fill="#b0000f" opacity=".08"/>
+<circle cx="90" cy="450" r="110" fill="#1f5a2e" opacity=".10"/>
+<!-- steam -->
+<g fill="none" stroke="#b0000f" stroke-width="7" stroke-linecap="round" opacity=".35">
+<path d="M250 140c-24-26 24-46 0-72"/><path d="M320 130c-24-26 24-46 0-72"/><path d="M390 140c-24-26 24-46 0-72"/></g>
+<!-- noodles -->
+<g fill="none" stroke="#f3dfa2" stroke-width="9" stroke-linecap="round">
+<path d="M190 250c40-60 80 20 120-30s80 30 130-20"/><path d="M200 270c50-40 80 30 130-10s70 20 110-10"/></g>
+<!-- toppings -->
+<ellipse cx="260" cy="240" rx="34" ry="20" fill="#e9a39a"/><ellipse cx="350" cy="235" rx="30" ry="18" fill="#f6efe0" stroke="#d6c7a6" stroke-width="3"/>
+<circle cx="350" cy="235" r="8" fill="#f2b631"/>
+<g fill="#2f8a43"><ellipse cx="300" cy="222" rx="14" ry="6" transform="rotate(-20 300 222)"/><ellipse cx="400" cy="240" rx="14" ry="6" transform="rotate(25 400 240)"/><ellipse cx="225" cy="255" rx="12" ry="5"/></g>
+<!-- bowl -->
+<path d="M120 270h400c0 120-80 200-200 200S120 390 120 270z" fill="#b0000f"/>
+<path d="M120 270h400" stroke="#8a000c" stroke-width="10" stroke-linecap="round"/>
+<path d="M150 330h340" stroke="#f2b631" stroke-width="6" stroke-dasharray="2 12" stroke-linecap="round"/>
+<text x="320" y="392" text-anchor="middle" font-family="Oswald,Arial,sans-serif" font-weight="700" font-size="40" fill="#fff6e0">VIFON</text>
+<text x="320" y="428" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#fff6e0">Hủ Tiếu Hương Vang</text>
+<ellipse cx="320" cy="488" rx="150" ry="12" fill="#2a1e18" opacity=".12"/>
+</svg>
