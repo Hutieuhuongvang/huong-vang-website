@@ -75,7 +75,24 @@
   <div class="wrap"><b>VIFON Hu Tieu Huong Vang</b> · <span class="en">International Marketing Plan for Australia</span><span class="vi">Kế hoạch Marketing quốc tế cho thị trường Úc</span> · Group 1 — Thuongmai University · <a href="#top"><span class="en">Back to top</span><span class="vi">Lên đầu trang</span> ↑</a></div>
 </footer>
 <script src="js/main.js"></script>
-<section class="pho-sec" id="gallery">
+<style>
+.pho-sec{padding:70px 0;background:#fbf4e6}
+.pho-wrap{width:min(1120px,92%);margin:0 auto}
+.pho-sec h2{font-size:clamp(1.8rem,4vw,2.6rem);color:#b0000f;text-transform:uppercase;margin:0 0 8px}
+.pho-sub{color:#6b5a50;margin:0 0 26px}
+.pho-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.pho-item{margin:0;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(90,30,10,.12);cursor:zoom-in;transition:transform .25s}
+.pho-item:hover{transform:translateY(-5px)}
+.pho-item .pho-img{aspect-ratio:4/3;overflow:hidden;background:#f0e5cf}
+.pho-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.pho-item:hover img{transform:scale(1.06)}
+.pho-item figcaption{padding:14px 18px 18px;font-weight:600;color:#1f5a2e;font-size:.98rem}
+.pho-box{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:999;padding:20px;cursor:zoom-out}
+.pho-box.open{display:flex}
+.pho-box img{max-width:100%;max-height:92vh;border-radius:12px}
+@media(max-width:900px){.pho-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.pho-grid{grid-template-columns:1fr}}
+</style><section class="pho-sec" id="gallery">
   <div class="pho-wrap">
     <h2>Hình ảnh sản phẩm</h2>
     <p class="pho-sub">Chạm vào ảnh để xem lớn.</p>
