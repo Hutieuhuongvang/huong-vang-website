@@ -75,5 +75,40 @@
   <div class="wrap"><b>VIFON Hu Tieu Huong Vang</b> · <span class="en">International Marketing Plan for Australia</span><span class="vi">Kế hoạch Marketing quốc tế cho thị trường Úc</span> · Group 1 — Thuongmai University · <a href="#top"><span class="en">Back to top</span><span class="vi">Lên đầu trang</span> ↑</a></div>
 </footer>
 <script src="js/main.js"></script>
+<section class="pho-sec" id="gallery">
+  <div class="pho-wrap">
+    <h2>Hình ảnh sản phẩm</h2>
+    <p class="pho-sub">Chạm vào ảnh để xem lớn.</p>
+    <div class="pho-grid" id="pho-grid"></div>
+  </div>
+</section>
+<div class="pho-box" id="pho-box"><img alt=""></div>
+
+<script>
+// 1) Tên thư mục chứa ảnh (có dấu / ở cuối). Trang nằm trong vifon-site nên cần ../
+const PHOTO_FOLDER = "../image/";
+
+// 2) DANH SÁCH ẢNH: mỗi dòng là một ảnh. Thêm/xóa/sửa dòng tùy ý.
+const PHOTOS = [
+  { file: "anhweb1.jpg", caption: "Bữa ăn tiện lợi mỗi ngày" },
+  { file: "anhweb2.jpg", caption: "Nguyên liệu Hủ Tiếu Hương Vang" },
+  { file: "anhweb3.jpg", caption: "Bao bì dạng tô và ly" },
+  { file: "anhweb4.jpg", caption: "Logo Hủ Tiếu Hương Vang" },
+  { file: "anhweb5.jpg", caption: "Hủ Tiếu Hương Vang dạng ly" }
+];
+
+// ---- Phần dưới giữ nguyên ----
+const grid = document.getElementById("pho-grid");
+const box = document.getElementById("pho-box");
+PHOTOS.forEach(p => {
+  const fig = document.createElement("figure");
+  fig.className = "pho-item";
+  fig.innerHTML = '<div class="pho-img"><img loading="lazy" src="' + PHOTO_FOLDER + p.file + '" alt="' + p.caption + '"></div><figcaption>' + p.caption + '</figcaption>';
+  fig.addEventListener("click", () => { box.querySelector("img").src = PHOTO_FOLDER + p.file; box.classList.add("open"); });
+  grid.appendChild(fig);
+});
+box.addEventListener("click", () => box.classList.remove("open"));
+document.addEventListener("keydown", e => { if (e.key === "Escape") box.classList.remove("open"); });
+</script>
 </body>
 </html>
